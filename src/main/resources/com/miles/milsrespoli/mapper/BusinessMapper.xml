@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.miles.milsrespoli.mapper.BusinessMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.miles.milsrespoli.dto.BusinessDTO">
+        <id column="id" property="id" />
+        <result column="kalkis" property="kalkis" />
+        <result column="varis" property="varis" />
+        <result column="tip" property="tip" />
+        <result column="tarih" property="tarih" />
+        <result column="fiyat" property="fiyat" />
+        <result column="mil" property="mil" />
+        <result column="hediye_mil" property="hediyeMil" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+ id,  kalkis,  varis,  tip,  tarih,  fiyat,  mil,  hediye_mil
+    </sql>
+</mapper>
