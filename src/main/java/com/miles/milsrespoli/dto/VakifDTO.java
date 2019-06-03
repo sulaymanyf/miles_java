@@ -1,7 +1,5 @@
 package com.miles.milsrespoli.dto;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -9,6 +7,7 @@ import lombok.ToString;
 import lombok.experimental.Tolerate;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -22,25 +21,31 @@ import java.io.Serializable;
 @Builder
 @ToString
 @EqualsAndHashCode(callSuper = false)
-public class SysInfoDTO implements Serializable {
+public class VakifDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@TableId(value = "ID_STR", type = IdType.INPUT)
+
 	private String id;
 
-	private String logo;
+	private String name;
 
-	private String thanksTo;
+	private String telephone;
 
-	private String timeline;
+	private String address;
 
-	private String ilsimImage;
+	private BigDecimal toplanMil;
+
+	private BigDecimal kalanMil;
+
+	private String milKaynak;
+
+	private String status;
 
 
 
 	@Tolerate
-	public SysInfoDTO(){
+	public VakifDTO(){
 	}
 
 }

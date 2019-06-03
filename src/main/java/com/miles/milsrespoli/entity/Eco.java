@@ -16,14 +16,14 @@ import java.math.BigDecimal;
  * </p>
  *
  * @author yefan
- * @since 2019-05-29
+ * @since 2019-05-31
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Builder
 @ToString
 @TableName("miles_eco")
-public class Eco  {
+public class Eco {
 
     private static final long serialVersionUID = 1L;
 

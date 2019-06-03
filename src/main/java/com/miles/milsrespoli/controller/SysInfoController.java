@@ -1,10 +1,8 @@
 package com.miles.milsrespoli.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-
 import org.springframework.stereotype.Controller;
-
+import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * <p>
@@ -15,7 +13,7 @@ import org.springframework.stereotype.Controller;
  * @since 2019-05-29
  */
 @Controller
-@RequestMapping("/com/miles-mail")
-public class MilesMailController {
+@RequestMapping("/com/miles-sys-info")
+public class SysInfoController {
 
 }

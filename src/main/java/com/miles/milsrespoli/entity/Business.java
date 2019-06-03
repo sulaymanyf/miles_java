@@ -1,5 +1,6 @@
 package com.miles.milsrespoli.entity;
 
+
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Builder;
@@ -16,7 +17,7 @@ import java.math.BigDecimal;
  * </p>
  *
  * @author yefan
- * @since 2019-05-29
+ * @since 2019-05-31
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -36,8 +37,8 @@ public class Business {
 	private String tip;
 	@TableField("tarih")
 	private String tarih;
-	@TableField("fiyat")
-	private String fiyat;
+	@TableField("tiyat")
+	private String tiyat;
 	@TableField("mil")
 	private BigDecimal mil;
 	@TableField("hediye_mil")

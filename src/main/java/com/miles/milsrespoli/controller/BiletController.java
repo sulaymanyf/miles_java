@@ -69,7 +69,7 @@ public class BiletController {
         }else {
             QueryWrapper<Business> queryWrapper = new QueryWrapper<>();
             queryWrapper.eq(!biletDto.getVaris().isEmpty(),"kalkis",biletDto.getKalkis()).eq(!biletDto.getVaris().isEmpty(),"varis",biletDto.getVaris());
-            return new Result(ResultCode.SUCCESS,BusinessService.list(queryWrapper));
+            return new Result(ResultCode.SUCCESS,BusinessService.list(queryWrapper),"Aradığınız Bilete Ulaşıldı");
         }
 
     }

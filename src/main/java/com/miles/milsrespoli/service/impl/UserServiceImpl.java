@@ -1,5 +1,6 @@
 package com.miles.milsrespoli.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.miles.milsrespoli.entity.User;
 import com.miles.milsrespoli.mapper.UserMapper;
@@ -17,4 +18,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
 
+    @Override
+    public User findByUserName(String userName) {
+        return this.getOne(new QueryWrapper<User>().eq("userName",userName));
+    }
 }

@@ -9,7 +9,7 @@ import com.miles.milsrespoli.entity.User;
  * </p>
  *
  * @author yefan
- * @since 2019-05-29
+ * @since 2019-05-31
  */
 public interface UserMapper extends BaseMapper<User> {
 

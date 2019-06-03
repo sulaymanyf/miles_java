@@ -9,15 +9,16 @@
         <result column="password" property="password" />
         <result column="salt" property="salt" />
         <result column="email" property="email" />
-        <result column="mobile" property="mobile" />
+        <result column="telephone" property="telephone" />
         <result column="status" property="status" />
         <result column="create_time" property="createTime" />
         <result column="user_type" property="userType" />
         <result column="last_login_time" property="lastLoginTime" />
+        <result column="type_id" property="typeId" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
- user_id,  username,  password,  salt,  email,  mobile,  status,  create_time,  user_type,  last_login_time
+ user_id,  username,  password,  salt,  email,  mobile,  status,  create_time,  user_type,  last_login_time,  type_id
     </sql>
 </mapper>

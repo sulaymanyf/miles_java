@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author yefan
- * @since 2019-05-29
+ * @since 2019-05-31
  */
 @Data
 @Builder
@@ -24,7 +24,6 @@ import java.time.LocalDateTime;
 public class UserDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
 
 
 	private String userId;
@@ -52,7 +51,7 @@ public class UserDTO implements Serializable {
 	/**
 	 * 手机号
 	 */
-	private String mobile;
+	private String telephone;
 
 	/**
 	 * 状态  0：禁用   1：正常
@@ -64,9 +63,12 @@ public class UserDTO implements Serializable {
 	 */
 	private LocalDateTime createTime;
 
-	private Integer userType;
+	private String userType;
 
 	private LocalDateTime lastLoginTime;
+
+	private String typeId;
+
 
 
 	@Tolerate

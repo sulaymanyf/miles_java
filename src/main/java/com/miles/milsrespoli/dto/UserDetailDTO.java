@@ -1,7 +1,6 @@
 package com.miles.milsrespoli.dto;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +9,7 @@ import lombok.ToString;
 import lombok.experimental.Tolerate;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * <p>
@@ -23,28 +23,33 @@ import java.io.Serializable;
 @Builder
 @ToString
 @EqualsAndHashCode(callSuper = false)
-@KeySequence(value = "SEQ_ORACLE_STRING_KEY", clazz = String.class)
-public class MailDTO implements Serializable {
+public class UserDetailDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	@TableId(value = "ID_STR", type = IdType.INPUT)
 	private String id;
 
-	private String adi;
-
-	private String soyadi;
+	private String name;
 
 	private String telephone;
 
-	private String email;
+	private String avatar;
 
-	private String message;
+	private String address;
+
+	private BigDecimal kalanMil;
+
+	private BigDecimal toplanMil;
+
+	private BigDecimal hediyeMil;
+
+	private String status;
 
 
 
 	@Tolerate
-	public MailDTO(){
+	public UserDetailDTO(){
 	}
 
 }

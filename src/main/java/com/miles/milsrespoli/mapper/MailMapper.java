@@ -9,8 +9,9 @@ import com.miles.milsrespoli.entity.Mail;
  * </p>
  *
  * @author yefan
- * @since 2019-05-29
+ * @since 2019-05-31
  */
 public interface MailMapper extends BaseMapper<Mail> {
+
 
 }

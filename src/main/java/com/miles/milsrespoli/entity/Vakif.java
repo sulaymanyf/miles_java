@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.experimental.Tolerate;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
@@ -21,26 +22,32 @@ import java.math.BigInteger;
 @EqualsAndHashCode(callSuper = false)
 @Builder
 @ToString
-@TableName("miles_sys_info")
-public class SysInfo {
+@TableName("miles_vakif")
+public class Vakif  {
 
     private static final long serialVersionUID = 1L;
 
 	@TableId(value = "id", type = IdType.INPUT)
 	private BigInteger id;
-	@TableField("logo")
-	private String logo;
-	@TableField("thanks_to")
-	private String thanksTo;
-	@TableField("timeline")
-	private String timeline;
-	@TableField("ilsim_image")
-	private String ilsimImage;
+	@TableField("name")
+	private String name;
+	@TableField("telephone")
+	private String telephone;
+	@TableField("address")
+	private String address;
+	@TableField("toplan_mil")
+	private BigDecimal toplanMil;
+	@TableField("kalan_mil")
+	private BigDecimal kalanMil;
+	@TableField("mil_kaynak")
+	private String milKaynak;
+	@TableField("status")
+	private String status;
 
 
 
 	@Tolerate
-	public SysInfo(){
+	public Vakif(){
 	}
 
 

@@ -1,7 +1,7 @@
 package com.miles.milsrespoli.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.miles.milsrespoli.entity.SysInfo;
+import com.miles.milsrespoli.entity.UserDetail;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.miles.milsrespoli.entity.SysInfo;
  * @author yefan
  * @since 2019-05-31
  */
-public interface SysInfoMapper extends BaseMapper<SysInfo> {
+public interface UserDetailMapper extends BaseMapper<UserDetail> {
 
 }

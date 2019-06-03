@@ -1,13 +1,13 @@
 package com.miles.milsrespoli.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import lombok.experimental.Tolerate;
 
+import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 /**
@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author yefan
- * @since 2019-05-29
+ * @since 2019-05-31
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -27,8 +27,8 @@ public class User {
 
     private static final long serialVersionUID = 1L;
 
-
-	private String userId;
+	@TableId(value = "user_id", type = IdType.INPUT)
+	private BigInteger userId;
 	/**
 	 * 用户名
 	 */
@@ -52,17 +52,19 @@ public class User {
 	/**
 	 * 手机号
 	 */
-	@TableField("mobile")
-	private String mobile;
+	@TableField("telephone")
+	private String telephone;
 	/**
 	 * 状态  0：禁用   1：正常
 	 */
 	@TableField("status")
 	private Integer status;
 	@TableField("user_type")
-	private Integer userType;
+	private String userType;
 	@TableField("last_login_time")
 	private LocalDateTime lastLoginTime;
+	@TableField("type_id")
+	private String typeId;
 
 
 

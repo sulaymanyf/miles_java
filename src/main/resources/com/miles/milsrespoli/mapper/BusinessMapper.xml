@@ -16,6 +16,6 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
- id,  kalkis,  varis,  tip,  tarih,  fiyat,  mil,  hediye_mil
+ id,  kalkis,  varis,  tip,  tarih,  tiyat,  mil,  hediye_mil
     </sql>
 </mapper>
